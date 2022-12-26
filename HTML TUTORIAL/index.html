@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- &#8981 -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>netflix</title>
+  </head>
+  <body>
+    
+    <div id="nav-bar">
+        <img src="netflix.png" alt="">
+        <div class="menu-right">
+            <span onclick="myfunction(this)">&#9775;</span>
+            <ul id="menu">
+               <li><a href="#nav-bar">home</a></li>
+               <li><a href="#netflix-clone">video</a></li>
+               <li><a href="#bottom">contect</a></li>
+            </ul>
+        </div>
+        <div class="child">
+          <select data-uia="language-picker-header" class="ui-select medium" id="lang-switcher-header-select" tabindex="0" placeholder="lang-switcher"><option selected="" lang="en" value="/in/" data-language="en" data-country="IN">English</option><option lang="hi" value="/in-hi/" data-language="hi" data-country="IN">हिन्दी</option></select>
+          <!-- <button>sign up</button> -->
+          <a href="#">sign up</a>
+        </div>
+        <div class="banner">
+          <p>Welcome back!</p>
+          <h1>Unlimited movies, TV shows and more.</h1>
+           <a href="">Finis Sign Up!> </a>
+        </div>
+    </div>
+
+    <div id="netflix-clone">
+      <img src="tv.png" alt="">
+     <video src="./marvel.mp4" controls >my video</video >
+      <h1>Enjoy on your TV.</h1>
+      <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+
+      
+    </div>
+    <div class="animation-card">
+      <h1>Download your shows to watch offline.</h1>
+      <p>Save your favourites easily and always have something to watch.</p>
+      <img src="mobile-0819.jpg" alt="">
+    </div>
+    <div class="meddle">
+      <h1>Create profiles for children.</h1>
+      <p>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+      <img src="cartton.png" alt="">
+    </div>
+    <footer>
+      
+      <div id="bottom">
+        <p>Questions? Call 000-800-919-1694</p>
+        <img src="https://cdn-icons-png.flaticon.com/128/4494/4494475.png" alt="">
+        <img src="https://cdn-icons-png.flaticon.com/128/4494/4494477.png" alt="">
+        <img src="https://cdn-icons-png.flaticon.com/128/4494/4494497.png" alt="">
+      </div>
+
+          <div class="first">
+            <li><a href="https://www.techtarget.com/searchcio/definition/FQA">FQA</a></li>
+            <li><a href="https://americanliterature.com/short-stories-for-children/">Story Link</a></li>
+            <li><a href="https://safety.google/?utm_source=google&utm_medium=cpc&utm_campaign=safety_center&utm_term=google_privacy&gclid=CjwKCAiAqaWdBhAvEiwAGAQlti9FmM3BUuvQx_I3RH-cIBA6r0B-Aj7mp7XGbqNvWR5wdZJ5HUQB6BoCc5MQAvD_BwE&gclsrc=aw.ds">Privacy</a></li>
+            <li><a href="https://www.speedtest.net/">Speed Test</a></li>
+            
+          </div>
+             <div class="second">
+              <li><a href="https://www.linkedin.com/feed/">Link Din</a></li>
+            <li><a href="https://www.codewithharry.com/">Learn Coding</a></li>
+            <li><a href="https://www.oberlo.in/blog/how-to-enjoy-life-more">Life Enjow</a></li>
+            <li><a href="https://www.netflix.com/in/">Netflix</a></li>
+             </div>
+             <div class="language">
+              <select data-uia="language-picker-header" class="ui-select medium" id="lang-switcher-header-select" tabindex="0" placeholder="lang-switcher"><option selected="" lang="en" value="/in/" data-language="en" data-country="IN">English</option><option lang="hi" value="/in-hi/" data-language="hi" data-country="IN">हिन्दी</option></select>
+             </div>
+              <div class="sign-up">
+                <input type="text" placeholder="Enter Email" name="email" required>
+                <a href="">Sign in</a>
+              </div>
+
+    </footer>
+         
+
+    <script>
+        function myfunction(){
+         var x = document.getElementById("menu");
+        
+         if(x.style.display == "block")
+         {
+            x.style.display = "none";
+         }
+         else{
+            x.style.display = "block";
+         }
+         x.classList.toggle("change");
+        }
+
+    </script>
+
+  </body>
+</html>
